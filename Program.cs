@@ -11,11 +11,13 @@ namespace heist2
             Muscle Guido = new Muscle("Guido", 40, 33);
             LockSpecialist Tom = new LockSpecialist("Tom", 33,33);
 
-            Console.WriteLine($"{Ronny.Name} Mr. Hacker is hacking the alarm system. Decreased security 50 points");
-            Console.WriteLine($"{Guido.Name} Mr. Muscle is hacking the alarm system. Decreased security 50 points");
-            Console.WriteLine($"{Tom.Name} Mr. LockSpecialist is hacking the alarm system. Decreased security 50 points");
+            Console.WriteLine($"{Ronny.Name} is hacking the alarm system. Decreased security {Ronny.SkillLevel} points");
+            Console.WriteLine($"{Guido.Name} is hacking the alarm system. Decreased security {Guido.SkillLevel} points");
+            Console.WriteLine($"{Tom.Name} is hacking the alarm system. Decreased security {Tom.SkillLevel} points");
 
-            var Rolodex = 
+            
+
+            
 
         }
     }

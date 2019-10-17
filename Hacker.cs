@@ -1,3 +1,5 @@
+using System;
+
 namespace heist2
 {
     public class Hacker : IRobber
@@ -13,6 +15,7 @@ namespace heist2
         public void PerformSkill(Bank bank)
         {
             bank.AlarmScore = bank.AlarmScore - SkillLevel;
+            Console.WriteLine($"{Name} is hacking TEST the alarm system. Decreased security {SkillLevel} points");
         }
 
         public Hacker (string _Name, int _SkillLevel, int _PercentageCut)
@@ -21,6 +24,9 @@ namespace heist2
             SkillLevel = _SkillLevel;
             PercentageCut = _PercentageCut;
         }
+        
+
+        
 
     }
 }
